@@ -16,11 +16,13 @@ public class InteligenciaController {
         Random exame = new Random();
         Integer resultadoExame = exame.nextInt(11);
 
-        if(true/*resultadoExame > 5*/){
+        if(resultadoExame > 5){
+            System.out.println("Resultado do exame: " + resultadoExame);
             this.listaRebeldes.add(rebeldeNovo);
             System.out.println("Mestre Yoda aprovou o novo rebelde! Bem vindo ao exército");
         }
         else {
+            System.out.println("Resultado do exame: " + resultadoExame);
             System.out.println("Mestre Yoda ainda acha que você precisa de mais treino. Volte em outro momento.");
         }
 

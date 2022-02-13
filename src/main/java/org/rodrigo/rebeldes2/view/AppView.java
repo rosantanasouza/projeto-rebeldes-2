@@ -55,6 +55,7 @@ public class AppView {
         System.out.println("SELECIONE UMA OPÇÃO ABAIXO:");
         System.out.println("[1] - CADASTRAR NOVO REBELDE");
         System.out.println("[2] - VISUALIZAR LISTA EM TELA E IMPRIMIR O ARQUIVO DA LISTA EM FORMATO TXT.");
+        System.out.println("[3] - SAIR DA APLICAÇÃO.");
 
         Scanner input = new Scanner(System.in);
         try {
@@ -67,6 +68,9 @@ public class AppView {
                 case 2:
                     menuImpressaoArquivo();
                     break;
+
+                case 3:
+                    System.exit(0);
 
                 default:
                     System.out.println("Opção inválida. Por favor, selecione uma opção válida.");
